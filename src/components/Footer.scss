@@ -1,0 +1,27 @@
+  footer {
+    padding: 3rem 0 ;
+    .container {
+      .row {
+        display: flex;
+        justify-content: center;
+        gap: 1rem;
+        margin-bottom: 1rem;
+
+        img {
+          width: 64px;
+          height: 64px;
+          border-radius: 50%;
+        }
+
+        a:hover {
+          background-color: #0085a1;
+        }
+      }
+
+      p {
+        text-align: center;
+        font-size: 1.125rem;
+        color: #19191988;
+      }
+    }
+  }

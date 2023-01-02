@@ -1,38 +1,10 @@
 .index-page {
-  nav {
-    .container {
-      .row {
-        height: 72px;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
 
-        .brand {
-          font-size: 1.5rem;
-          line-height: 1.75rem;
-        }
-
-        .link {
-          ul {
-            display: flex;
-            align-items: center;
-
-            li {
-              padding: .6rem 1rem;
-
-              a {
-                color: #fff;
-              }
-
-              img {
-                width: 24px;
-              }
-            }
-          }
-        }
-      }
-    }
+  ::selection {
+    background: #0085a1;
+    color: #fff;
   }
+
 
   section.hero {
     margin-top: -72px;
@@ -42,6 +14,7 @@
     height: var(--height);
     background-color: #101010;
     z-index: -5;
+
     img.background {
       opacity: .5;
       position: absolute;
@@ -74,41 +47,56 @@
     }
   }
 
-  section.blog{
-    padding: 4rem 0 ;
-    .container{
+  section.blog {
+    padding: 4rem 0;
+
+    .container {
       .row {
+
+
         .box {
-          box-shadow: 0 4px 4px rgba(0,0,0, 0.12);
-          margin-bottom: 1rem;
+          position: relative;
+          border: 5px solid;
+          border-image-slice: 1;
+          // border-image-source: linear-gradient(45deg, purple, orange);
+          border-image-source: conic-gradient(hsl(250, 100%, 60%), hsl(350, 100%, 20%), hsl(250, 100%, 60%));
+          margin-bottom: 3rem;
           padding: 2rem 1rem;
-          .title{
+
+          .title {
             font-size: 2rem;
             line-height: 2.5rem;
             margin-bottom: .5rem;
           }
+
           .text {
             font-size: 1.5rem;
             line-height: 1.75rem;
             margin-bottom: 3rem;
           }
+
           .action {
             margin-bottom: .5rem;
+
             button {
               background-color: #0085a1;
-              color : #fff;
-              border:  none;
+              color: #fff;
+              border: none;
               border-radius: 2px;
               font-size: 1.1rem;
               padding: .6rem 1rem;
             }
           }
-          .date{
+
+          .date {
             font-size: 1.125rem;
             font-style: italic;
           }
-        }        
+        }
       }
     }
   }
+
+
+
 }
