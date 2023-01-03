@@ -33,3 +33,14 @@
     }
   }
 }
+
+@media screen and (max-width:768px){
+  .about-page{
+    section.hero{
+      margin-top: 0;
+      .container{
+        
+      }
+    }
+  }
+}
