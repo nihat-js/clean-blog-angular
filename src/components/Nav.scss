@@ -1,4 +1,4 @@
- nav {
+ nav.nav {
    .container {
      .row {
        height: 72px;
@@ -16,7 +16,6 @@
          ul {
            display: flex;
            align-items: center;
-
            li {
              padding: .6rem 1rem;
 
@@ -29,6 +28,26 @@
              }
            }
          }
+       }
+       .hamburger{
+        img{
+          width: 36px;
+          height: 36px;
+          // background-color: blue;
+        }
+       }
+     }
+   }
+ }
+
+ .mobile-nav {
+   position: absolute;
+   background-color: #fff;
+  width: 100%;
+   .container {
+     .row {
+       ul li img {
+         width: 32px;
        }
      }
    }
