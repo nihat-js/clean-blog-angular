@@ -16,6 +16,7 @@
          ul {
            display: flex;
            align-items: center;
+
            li {
              padding: .6rem 1rem;
 
@@ -29,12 +30,13 @@
            }
          }
        }
-       .hamburger{
-        img{
-          width: 36px;
-          height: 36px;
-          // background-color: blue;
-        }
+
+       .hamburger {
+         img {
+           width: 36px;
+           height: 36px;
+           // background-color: blue;
+         }
        }
      }
    }
@@ -43,11 +45,41 @@
  .mobile-nav {
    position: absolute;
    background-color: #fff;
-  width: 100%;
+   color: #191919;
+   width: 100%;
+
    .container {
      .row {
-       ul li img {
-         width: 32px;
+       ul {
+         li {
+           padding: .6rem .3rem;
+
+           img {
+             width: 32px;
+           }
+         }
+       }
+     }
+   }
+ }
+
+ @media screen and (max-width:768px) {
+   nav.nav {
+     color: #191919;
+
+     .container {
+       .row {
+         .brand {
+           color: #191919;
+         }
+
+         .link {
+           display: none;
+         }
+
+         .hamburger {
+           display: block;
+         }
        }
      }
    }

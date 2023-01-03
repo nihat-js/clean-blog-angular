@@ -3,8 +3,15 @@ import { Link } from 'react-router-dom'
 import './Nav.scss'
 import githubImage from '../assets/img/github.svg'
 import hamburgerImage from '../assets/img/hamburger.svg'
+import { useState } from 'react'
+
+
+
 
 export default function Nav() {
+
+  const [toggleMobileNav, setToggleMobileNav] = useState(false)
+
   return (
     <header>
       <nav className='nav'>
@@ -18,13 +25,13 @@ export default function Nav() {
                 <li> <a href="https://github.com/nihat-js"> <img src={githubImage} alt="" />   </a>   </li>
               </ul>
             </div>
-            <div className="hamburger">
-              <img src={hamburgerImage} alt="" />
+            <div className="hamburger d-none">
+              <img src={hamburgerImage} alt="" onClick={() => setToggleMobileNav(!toggleMobileNav)} />
             </div>
           </div>
         </div>
       </nav>
-      <nav className="mobile-nav d-none">
+      <nav className={` mobile-nav ${toggleMobileNav ? '' : 'd-none'}   `}   >
         <div className="container">
           <div className="row">
             <ul>
